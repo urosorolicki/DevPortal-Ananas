@@ -1,8 +1,8 @@
 <html>
-
+<a href="style.css"> </a>
 <body>
   <div class="form">
-    <img src="src/ANANAS-Logo-White-Green.png" .png height="100px" width="275px">
+    <img class="headerimg" src="src/ANANAS-Logo-White-Green.png" height="100px" width="275px">
     <div class="subtitle">Molimo Vas registrujte se!</div>
     <div class="input-container ic1">
       <input id="firstname" class="input" type="text" placeholder=" " />
@@ -15,11 +15,12 @@
       <label for="lastname" class="placeholder">Prezime</label>
     </div>
     <div class="input-container ic2">
-      <input id="email" class="input" type="text" placeholder=" " />
+      <input id="email" class="input" type="text" placeholder=" " />ß
       <div class="cut cut-short"></div>
       <label for="email" class="placeholder">Email</>
     </div>
-    <button type="button" class="submit" onclick="proceed();">Potvrdi</button> 
+
+    <button class="submit" onclick="window.location.href='/index2.html'">Potvrdi</button>
 
   </div>
 
@@ -150,16 +151,41 @@
   .submit:active {
     background-color: #06b;
   }
+
+  .page {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 20%;
+
+  }
+
+  .headerimg {
+
+  height:100px;
+  width:275px
+
+
+
+  }
 </style>
 <script>
-  function proceed () {
+  function proceed() {
     var form = document.createElement('form');
-    form.setAttribute('method', 'post');
-    form.setAttribute('action', 'http://google.com');
+    form.setAttribute('method', 'login');
+    form.setAttribute('action', 'http://ananas.rs');
     form.style.display = 'hidden';
     document.body.appendChild(form)
     form.submit();
-}
+  }
 </script>
 
 </html>
