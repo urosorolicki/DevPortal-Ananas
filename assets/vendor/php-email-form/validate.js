@@ -1,8 +1,3 @@
-/**
-* PHP Email Form Validation - v3.2
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
 (function () {
   "use strict";
 
@@ -82,4 +77,13 @@
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
-})();
+  $(document).on("submit", "#requestForm", function (event) {$.ajax({
+    url:"https://127.0.0.1:5500/contact.php",
+    method: "POST", 
+    data:$(this).serialize(),
+    success:function(response)
+    {
+      alert("Well done!");
+    }
+  });
+})})
