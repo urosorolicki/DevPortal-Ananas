@@ -1,7 +1,7 @@
 <?php
   $receiving_email_address = 'orolickiiuros@gmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-emailform.php' )) {
+  if( file_exists($php_email_form = '...assets/vendor/php-email-form/validate.js' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
@@ -21,18 +21,18 @@ if(mail($email_to, $subject, $message, $headers)){
 }else{
     echo 'failed';// 
 }
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  // $contact->to = $receiving_email_address;
+  // $contact->from_name = $_POST['name'];
+  // $contact->from_email = $_POST['email'];
+  // $contact->subject = $_POST['subject'];
 
 
   
   $contact->smtp = array(
-    'host' => 'http://127.0.0.1:5500/',
+    'host' => 'http://127.0.0.1:5500/index2.html',
     'username' => 'orolickiiuros@gmail.com',
     'password' => 'rusrxvpsjrpwwyfm',
-    'port' => '587'
+    'port' => '25'
   );
   
 
@@ -41,3 +41,15 @@ if(mail($email_to, $subject, $message, $headers)){
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+  echo '<script>window.location.href="index2.html";</script>';
+  
+
+
+
+
+
+
+
+
+
+

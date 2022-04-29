@@ -78,8 +78,8 @@
   }
 
   $(document).on("submit", "#requestForm", function (event) {$.ajax({
-    url:"https://127.0.0.1:5500/contact.php",
-    method: "POST", 
+    url:"http://127.0.0.1:5500/index2.html",
+    type: "POST", 
     data:$(this).serialize(),
     success:function(response)
     {
