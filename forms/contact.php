@@ -1,7 +1,7 @@
 <?php
   $receiving_email_address = 'orolickiiuros@gmail.com';
 
-  if( file_exists($php_email_form = '...assets/vendor/php-email-form/validate.js' )) {
+  if( file_exists($php_email_form = '...forms/validate.js' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
@@ -26,7 +26,7 @@ if(mail($email_to, $subject, $message, $headers)){
 
   
   $contact->smtp = array(
-    'host' => 'http://127.0.0.1:5500/index2.html',
+    'host' => 'http://127.0.0.1:5500/index3.html',
     'username' => 'orolickiiuros@gmail.com',
     'password' => 'rusrxvpsjrpwwyfm',
     'port' => '25'
