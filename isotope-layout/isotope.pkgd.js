@@ -1,21 +1,3 @@
-/*!
- * Isotope PACKAGED v3.0.6
- *
- * Licensed GPLv3 for open source use
- * or Isotope Commercial License for commercial use
- *
- * https://isotope.metafizzy.co
- * Copyright 2010-2018 Metafizzy
- */
-
-/**
- * Bridget makes jQuery widgets
- * v2.0.1
- * MIT license
- */
-
-/* jshint browser: true, strict: true, undef: true, unused: true */
-
 ( function( window, factory ) {
   // universal module definition
   /*jshint strict: false */ /* globals define, module, require */
@@ -1576,16 +1558,7 @@ proto.getSize = function() {
   this.size = getSize( this.element );
 };
 
-/**
- * get measurement from option, for columnWidth, rowHeight, gutter
- * if option is String -> get element from selector string, & get size of element
- * if option is Element -> get size of element
- * else use option as a number
- *
- * @param {String} measurement
- * @param {String} size - width or height
- * @private
- */
+
 proto._getMeasurement = function( measurement, size ) {
   var option = this.options[ measurement ];
   var elem;
