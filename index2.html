@@ -1,216 +1,279 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algolia | Ananas</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="algolia" src="src/images/ANANAS-Logo-White-Green.png" alt="Logo" width="200"
+                                    height="75">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero text-center text-light">
+                <div class="hero-bg"></div>
+                <div class="hero-particles-container">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Ananas |&#128187| Algolija</h1>
+                            <p class="hero-paragraph">Algolia Dashboard.</p>
+                            <div class="hero-cta">
+                                <a class="button button-primary button-wide-mobile"
+                                    href="https://www.algolia.com/apps/Y1BSBVJ7AC/dashboard">Algolia dashboard</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mockup-container">
+                            <div class="mockup-bg">
+                                <img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration">
+                            </div>
+                            <img class="device-mockup" src="src/images/5847ea0fcef1014c0b5e4831.png" alt="iPhone Hero">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+                    <div class="features-extended-wrap">
+                        <div class="container">
+                            <div class="feature-extended">
+                                <div class="feature-extended-image">
+                                    <div class="mockup-bg">
+                                        <img src="dist/images/Screenshot 2022-03-17 at 14.39.55.png"
+                                            alt="iPhone Feature 01 illustration">
+                                    </div>
+                                </div>
+                                <div class="feature-extended-body is-revealing">
+                                    <h3 class="mt-0 mb-16">Algolija Index</h3>
+                                    <h4 class="m-0" color="black">Na pocetku nase male " radionice" upoznacemo se sa
+                                        Algolija dashboard-om i Product Env. Nakon toga idemo pravo na konfigurisanje
+                                        indexa i pomoc nasim kolegama iz Komercijale ;).</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-extended">
+                                <div class="feature-extended-image">
+                                    <div class="mockup-bg">
+                                        < <img src="" alt="iPhone Feature 02 illustration">
+                                    </div>
+                                    <img class="device-mockup is-revealing" src="dist/images/algolia-vector-logo.png"
+                                        alt="iPhone Feature 02">
+                                </div>
+                                <div class="feature-extended-body is-revealing">
+                                    <h3 class="mt-0 mb-16">Zasto Algolia?</h3>
+                                    <h4 class="m-0">Algolia nam pruza user-friendly interface koji je lak za
+                                        konfigurisanje i manipulisanje.</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-extended">
+                                <div class="feature-extended-image">
+                                    <div class="mockup-bg">
+                                        <img src="dist/images/iphone-feature-bg-03.svg"
+                                            alt="iPhone Feature 03 illustration">
+                                    </div>
+                                    <img class="device-mockup is-revealing"
+                                        src="dist/images/Screenshot 2022-03-17 at 14.46.37.png" alt="iPhone Feature 03">
+                                </div>
+                                <div class="feature-extended-body is-revealing">
+                                    <h3 class="mt-0 mb-16">Konfigurisanje Aloglie.</h3>
+                                    <h4 class="m-0">Algolia nam pruza monostvo mogucnosti od konfigurisanja sta ce se
+                                        prvo pojaviti u pretrazi, do vidljivosti merchant-a i naravno pozicioniranja
+                                        kriterijuma ( A Direkt, OnStock, onSale</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-extended">
+                            <div class="feature-extended-image">
+                                <div class="mockup-bg">
+                                    <img src="dist/images/iphone-feature-bg-03.svg"
+                                        alt="iPhone Feature 03 illustration">
+                                </div>
+                                <img class="device-mockup is-revealing"
+                                    src="dist/images/Screenshot 2022-03-17 at 15.40.19.png" alt="iPhone Feature 03"
+                                    style="height:150%;width:300px;">
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">Značenja Algolia Faceta</h3>
+                                <h4 class="m-0">Algolia nam pruza monostvo mogucnosti od konfigurisanja sta ce se prvo
+                                    pojaviti u pretrazi, do vidljivosti merchant-a i naravno pozicioniranja kriterijuma
+                                    ( A Direkt, OnStock, onSale</h4>
+                                <h3 class="mt-o mb-16">Searchable atributes </h3>
+                                <h4>Kompletna lista atribiuta koji se koriste u pretrazi.</h4>
+                            </div>
+                        </div>
+                        <div class="feature-extended">
+                            <div class="feature-extended-image">
+                                <div class="mockup-bg">
+                                    <img src="dist/images/iphone-feature-bg-03.svg"
+                                        alt="iPhone Feature 03 illustration">
+                                </div>
+                                <img class="device-mockup is-revealing"
+                                    src="dist/images/Screenshot 2022-03-17 at 15.48.19.png" alt="iPhone Feature 03"
+                                    style="height:150%;width:300px;">
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">Ranking and Sorting</h3>
+                                <h4 class="m-0">Na ovaj nacin konfigrusemo kako ce se prikazati rezultati pretrage.
+                                    Primera radi: Trenutno je podeseno da prvo na pretrazi izadju proizvodi koji su na
+                                    stanju (OnStock),
+                                    tako da nam proizvodi koji su rasprodati ili ih nema na stanju biti na poslednjoj
+                                    strani.
+                                </h4>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-extended">
+                            <div class="feature-extended-image">
+                                <div class="mockup-bg">
+                                    <img src="dist/images/iphone-feature-bg-03.svg"
+                                        alt="iPhone Feature 03 illustration">
+                                </div>
+                                <img class="device-mockup is-revealing"
+                                    src="dist/images/Screenshot 2022-03-17 at 15.54.03.png" alt="iPhone Feature 03"
+                                    style="height:150%;width:300px;">
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">Facets ( Filteri )</h3>
+                                <h4 class="m-0">Isto jako bitna stavka. Ovde manipulisemo atributima koji ce se
+                                    prikazivati na Algolia facetima i kasnije na Ananasu.
+                                    Lista je trenutno postavljena tako da nam je prioritet fba ( A direkt ),
+                                    merchant.id, onSale ( zbog akcije ).
+                                    Jako je vazno da se sa ovom listom pazljivo manipulise!
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-extended">
+                        <div class="feature-extended-image">
+                            <div class="mockup-bg">
+                                <img src="dist/images/iphone-feature-bg-03.svg" alt="iPhone Feature 03 illustration">
+                            </div>
+                            <img class="device-mockup is-revealing"
+                                src="dist/images/Screenshot 2022-03-18 at 09.46.14.png" alt="iPhone Feature 03"
+                                style="height:150%;width:300px;">
+                        </div>
+                        <div class="feature-extended-body is-revealing">
+                            <h3 class="mt-0 mb-16">Facet display</h3>
+                            <h4 class="m-0">Definise koji ce atributi se pojaviti na front-endu. Trenutno je grubo
+                                konfigurisano, buduci korisnik treba dodatno da je konfigurise.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="feature-extended">
+                        <div class="feature-extended-image">
+                            <div class="mockup-bg">
+                            </div>
 
-    <title>DevPortal - Ananas</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+                            <img class="device-mockup is-revealing" src="src/images/Ananas-Logo-Slogan-RGB-Srpski.png"
+                                alt="iPhone Feature 02">
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16"> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-particles-container">
+                <canvas id="footer-particles"></canvas>
+            </div>
+            <div class="site-footer-top">
+                <section class="cta section text-light">
+                    <div class="container-sm">
+                        <div class="cta-inner section-inner">
+                            <div class="cta-header text-center">
+                                <h2 class="section-title mt-0">Hvala Vam na izvdojenom vremenu.</h2>
+                                <h4 class="section-paragraph">Za dodatna pitanja&#11015</h4>
+                                <div class="cta-cta">
+                                    <a class="button button-primary button-wide-mobile"
+                                        href="mailto:uros.orolicki@ananas.rs">Dodatna pitanja &#128522</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="site-footer-inner">
+                        <div class="brand footer-brand">
+                            <a href="https://www.ananas.rs">
+                                <img src="src/images/ANANAS-Monogram-White-Green.png" alt="Venus logo"
+                                    style="height: 80px; width:auto;">
+                            </a>
+                        </div>
+                        <ul class="footer-links list-reset">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
- 
-    <!-- Template Main CSS File -->
-    <link href="assets/style.css" rel="stylesheet">
-
-
-<body>
-    <div class="form">
-        <img class="headerimg" src="src/imageedit_1_9394137719.png">
-        <div class="subtitle">Welcome!</div>
-        <div class="input-container ic1">
-            <input id="firstname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">Name</label>
-        </div>
-        <div class="input-container ic2">
-            <input id="email" class="input" type="text" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="email" class="placeholder">Email</>
-        </div>
-        <div class="input-container ic2">
-            <input id="password" class="input" type="password" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="password" class="placeholder">Password</>
-        </div>
-
-        <button class="submit" onclick="window.location.href='/index3.html'">Sumbit</button>
-
+                            <li>
+                                <a href="https://ananas.rs/o-nama">O nama</a>
+                            </li>
+                            <li>
+                                <a href="https://ananas.rs/cesto-postavljana-pitanja">Često postavljena pitanja</a>
+                            </li>
+                            <li>
+                                <a href="https://ananas.rs/korisnicka-podrska">Piši nam</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-social-links list-reset">
+                            <li>
+                                <a href="https://www.facebook.com/ananasEcommerce/">
+                                    <span class="screen-reader-text">Facebook</span>
+                                    <svg width="16" height="16" xmlns="https://www.facebook.com/ananasEcommerce/">
+                                        <path
+                                            d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                            fill="#FFF" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="screen-reader-text">Instagram</span>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                                            fill="#FFF" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="screen-reader-text">Google</span>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
+                                            fill="#FFF" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-copyright">&copy; 2022 ānanas. Sva prava zadržana.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
+    <script src="dist/js/main.min.js"></script>
 </body>
-<style>
-    body {
-        align-items: center;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    .form {
-        background-color: #15172b;
-        border-radius: 20px;
-        box-sizing: border-box;
-        height: 550px;
-        padding: 20px;
-        width: 320px;
-    }
-
-    .title {
-        color: #eee;
-        font-family: sans-serif;
-        font-size: 36px;
-        font-weight: 600;
-        margin-top: 30px;
-    }
-
-    .subtitle {
-        color: #eee;
-        font-family: sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: 10px;
-        margin-left: 95px;
-    }
-
-    .input-container {
-        height: 50px;
-        position: relative;
-        width: 100%;
-    }
-
-    .ic1 {
-        margin-top: 40px;
-    }
-
-    .ic2 {
-        margin-top: 30px;
-    }
-
-    .input {
-        background-color: #303245;
-        border-radius: 12px;
-        border: 0;
-        box-sizing: border-box;
-        color: #eee;
-        font-size: 18px;
-        height: 100%;
-        outline: 0;
-        padding: 4px 20px 0;
-        width: 100%;
-    }
-
-    .cut {
-        background-color: #15172b;
-        border-radius: 10px;
-        height: 20px;
-        left: 20px;
-        position: absolute;
-        top: -20px;
-        transform: translateY(0);
-        transition: transform 200ms;
-        width: 76px;
-    }
-
-    .cut-short {
-        width: 50px;
-    }
-
-    .input:focus~.cut,
-    .input:not(:placeholder-shown)~.cut {
-        transform: translateY(8px);
-    }
-
-    .placeholder {
-        color: #65657b;
-        font-family: sans-serif;
-        left: 20px;
-        line-height: 14px;
-        pointer-events: none;
-        position: absolute;
-        transform-origin: 0 50%;
-        transition: transform 200ms, color 200ms;
-        top: 20px;
-    }
-
-    .input:focus~.placeholder,
-    .input:not(:placeholder-shown)~.placeholder {
-        transform: translateY(-30px) translateX(10px) scale(0.75);
-    }
-
-    .input:not(:placeholder-shown)~.placeholder {
-        color: #808097;
-    }
-
-    .input:focus~.placeholder {
-        color: #FE5000;
-    }
-
-    .submit {
-        background-color: #08d;
-        border-radius: 12px;
-        border: 0;
-        box-sizing: border-box;
-        color: #eee;
-        cursor: pointer;
-        font-size: 18px;
-        height: 50px;
-        margin-top: 38px;
-        outline: 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .submit:active {
-        background-color: #06b;
-    }
-
-    .page {
-        background-color: #08d;
-        border-radius: 12px;
-        border: 0;
-        box-sizing: border-box;
-        color: #eee;
-        cursor: pointer;
-        font-size: 18px;
-        height: 50px;
-        margin-top: 38px;
-        outline: 0;
-        text-align: center;
-        width: 20%;
-
-    }
-
-    .headerimg {
-
-        height: 115px;
-        width: 145px;
-        padding: 2px 75px;
-        justify-items: center;
-    }
-</style>
-<script>
-    function proceed() {
-        var form = document.createElement('form');
-        form.setAttribute('method', 'login');
-        form.setAttribute('action', 'http://ananas.rs');
-        form.style.display = 'hidden';
-        document.body.appendChild(form)
-        form.submit();
-    }
-</script>
-
 </html>
